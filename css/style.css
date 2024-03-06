@@ -1,0 +1,171 @@
+
+/* inter-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/inter-v13-latin/inter-v13-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../assets/fonts/inter-v13-latin/inter-v13-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+  
+/* inter-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/inter-v13-latin/inter-v13-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../assets/fonts/inter-v13-latin/inter-v13-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+  
+/* inter-800 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../assets/fonts/inter-v13-latin/inter-v13-latin-800.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../assets/fonts/inter-v13-latin/inter-v13-latin-800.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+  
+:root{
+    /* primary colors */
+    --softOrange: hsl(35, 77%, 62%);
+    --softRed: hsl(5, 85%, 63%);
+
+    /* neutral colors */
+    --offWhite: hsl(36, 100%, 99%);
+    --grayishBlue: hsl(233, 8%, 79%);
+    --darkGrayishBlue: hsl(236, 13%, 42%);
+    --veryDarkBlue: hsl(353, 100%, 5%);
+    --veryDarkBlueAlpha: rgba(0, 0, 26, 0.5);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+body{
+    width: clamp(375px, 100%, 1140px);
+    margin-inline: auto;
+    padding-inline: 1rem;
+    position: relative;
+    background-color: var(--offWhite);
+}
+
+body.stop-scrolling{
+    height: 100%;
+    overflow: hidden;
+}
+
+img, svg{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1{
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--veryDarkBlue);
+    line-height: 1;
+}
+@media (max-width : 730px){
+    h1{
+        font-size: 3rem;
+    }
+}
+
+h2{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--softOrange);
+    line-height: 1;
+}
+
+h3{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--offWhite);
+    line-height: 1;
+    cursor: pointer;
+}
+h3:hover{
+    color: var(--softOrange);
+}
+
+h4{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--grayishBlue);
+    line-height: 1;
+    cursor: pointer;
+}
+
+h5{
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--veryDarkBlue);
+    line-height: 1;
+    cursor: pointer;
+}
+h5:hover{
+    color: var(--softRed);
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--darkGrayishBlue);
+    line-height: 1.5;
+}
+
+.main-div-four p{
+    color: var(--grayishBlue);
+}
+
+button{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--offWhite);
+    background-color: var(--softRed);
+    line-height: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border: none;
+}
+button:hover{
+    background-color: var(--veryDarkBlue);
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: var(--darkGrayishBlue);
+    border-radius: 1rem;
+}
+
+a{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--darkGrayishBlue);
+    line-height: 1;
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--softRed);
+}
+
+@media (max-width : 730px){
+    a{
+        font-size: 1.2rem;
+    }
+}
